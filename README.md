@@ -1,4 +1,4 @@
-# my-portfolio
+# portfolio
 
 # Open my portfolio live :
 
