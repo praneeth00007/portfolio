@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Praneeth Gupta | Software Development Engineer</title>
+    <meta
+      name="description"
+      content="Portfolio of Kothagundu Udaya Praneeth Gupta, a software development engineer building backend systems and full-stack products with Java, Spring Boot, React, and Kafka."
+    />
+    <script>
+      (() => {
+        try {
+          const savedTheme = localStorage.getItem("praneeth-theme");
+          if (savedTheme) {
+            document.documentElement.setAttribute("data-theme", savedTheme);
+          }
+        } catch (error) {
+          // Ignore storage access failures and continue with default theme.
+        }
+        document.documentElement.setAttribute("data-recruiter-mode", "on");
+      })();
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="image" href="images/hero.jpeg" fetchpriority="high" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/hero.jpeg" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/templatemo-style.css" />
+  </head>
+  <body>
+    <div class="bg-shape bg-shape-1" aria-hidden="true"></div>
+    <div class="bg-shape bg-shape-2" aria-hidden="true"></div>
+
+    <header class="site-header" id="top">
+      <nav class="nav-wrap container">
+        <a class="brand" href="#top" aria-label="Home">
+          <span class="brand-mark">&lt;/&gt;</span>
+          <div id="brand-namemark" class="brand-namemark" data-text="Praneeth Gupta" aria-hidden="true"></div>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#expertise">Expertise</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button
+            class="command-toggle"
+            type="button"
+            aria-label="Open quick navigation"
+            aria-haspopup="dialog"
+            aria-controls="command-palette"
+            aria-expanded="false"
+          >
+            <i class="fa fa-terminal" aria-hidden="true"></i>
+            <span>/</span>
+          </button>
+
+          <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+            <i class="fa fa-moon-o icon-moon" aria-hidden="true"></i>
+            <i class="fa fa-sun-o icon-sun" aria-hidden="true"></i>
+          </button>
+
+          <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <section class="dev-ribbon container" aria-label="Developer command strip">
+      <div class="dev-ribbon-shell">
+        <p class="dev-prompt">praneeth@portfolio:~$</p>
+        <button class="dev-command" type="button" data-dev-action="jump" data-dev-target="#expertise">
+          ./skills --graph
+        </button>
+        <button class="dev-command" type="button" data-dev-action="jump" data-dev-target="#projects">
+          ./projects --featured
+        </button>
+        <button class="dev-command" type="button" data-dev-action="palette">
+          ./nav --quick
+        </button>
+        <button class="dev-command" type="button" data-dev-action="external" data-dev-target="https://github.com/praneeth00007">
+          ./github --open
+        </button>
+      </div>
+      <p class="dev-ribbon-output" id="dev-ribbon-output" aria-live="polite">
+        Ready. Explore experience, projects, and skills below.
+      </p>
+    </section>
+
+    <aside class="section-rail" aria-label="Section progress">
+      <ol class="section-rail-list">
+        <li>
+          <a href="#about" data-section="about">
+            <span class="rail-dot" aria-hidden="true"></span>
+            <span class="rail-label">About</span>
+          </a>
+        </li>
+        <li>
+          <a href="#now-building" data-section="now-building">
+            <span class="rail-dot" aria-hidden="true"></span>
+            <span class="rail-label">Now</span>
+          </a>
+        </li>
+        <li>
+          <a href="#experience" data-section="experience">
+            <span class="rail-dot" aria-hidden="true"></span>
+            <span class="rail-label">Experience</span>
+          </a>
+        </li>
+        <li>
+          <a href="#expertise" data-section="expertise">
+            <span class="rail-dot" aria-hidden="true"></span>
+            <span class="rail-label">Expertise</span>
+          </a>
+        </li>
+        <li>
+          <a href="#projects" data-section="projects">
+            <span class="rail-dot" aria-hidden="true"></span>
+            <span class="rail-label">Projects</span>
+          </a>
+        </li>
+        <li>
+          <a href="#proof" data-section="proof">
+            <span class="rail-dot" aria-hidden="true"></span>
+            <span class="rail-label">Proof</span>
+          </a>
+        </li>
+        <li>
+          <a href="#contact" data-section="contact">
+            <span class="rail-dot" aria-hidden="true"></span>
+            <span class="rail-label">Contact</span>
+          </a>
+        </li>
+      </ol>
+      <span class="section-rail-progress" aria-hidden="true"></span>
+    </aside>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero section container" id="about">
+        <div class="hero-copy reveal" data-delay="0">
+          <div class="hero-drift" aria-hidden="true">
+            <canvas id="hero-particle-drift"></canvas>
+          </div>
+          <p class="eyebrow">Software Development Engineer · Full Stack Delivery</p>
+          <h1>
+            Building
+            <span class="highlight">Java + Spring Boot systems</span>
+            that stay fast and reliable in production
+          </h1>
+          <p class="lede">
+            I am Praneeth, a Software Development Engineer Intern at Kapture CX. I build backend-first products with
+            Java, Spring Boot, Kafka, and cloud services, and ship end-to-end features with React.js on the frontend.
+          </p>
+        </div>
+
+        <div class="hero-right reveal" data-delay="150">
+          <aside class="hero-reveal" aria-label="Interactive landing preview">
+            <div
+              id="landing-reveal-widget"
+              class="reveal-widget hero-reveal-widget"
+              data-top-image="images/hero.jpeg"
+              data-bottom-image="images/hero-bg.png"
+              data-reveal-mode="circle"
+              data-hover-radius="0.2"
+              data-hover-softness="0.5"
+              data-hover-strength="1"
+              data-performance-mode="auto"
+              data-touch-hold-ms="240"
+              aria-label="Interactive landing image reveal"
+            ></div>
+          </aside>
+
+          <section class="hero-actions-panel" aria-label="Primary actions and highlights">
+            <div class="hero-actions-below">
+              <div class="hero-cta">
+                <a class="btn btn-primary" href="mailto:praneethkothagundhu@gmail.com?subject=Hiring%20Inquiry%20for%20Praneeth%20Gupta"
+                  >Hire Me</a
+                >
+                <a class="btn btn-secondary" href="#projects">See Projects</a>
+              </div>
+
+              <div class="hero-social" aria-label="Professional profiles">
+                <a href="https://www.linkedin.com/in/kothagundu-udaya-praneeth-gupta-3b8570321" target="_blank" rel="noopener noreferrer"
+                  ><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a
+                >
+                <a href="https://github.com/praneeth00007" target="_blank" rel="noopener noreferrer"
+                  ><i class="fa fa-github" aria-hidden="true"></i> GitHub</a
+                >
+                <a href="http://praneeth.cyou/" target="_blank" rel="noopener noreferrer"
+                  ><i class="fa fa-globe" aria-hidden="true"></i> Portfolio</a
+                >
+                <a
+                  href="resume/Praneeth_resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa fa-file-text-o" aria-hidden="true"></i> Resume</a
+                >
+              </div>
+
+              <ul class="quick-meta" aria-label="Key highlights">
+                <li><strong>6+</strong> no-code workflows shipped for enterprise clients like Croma and Lenskart</li>
+                <li><strong>9.25</strong> CGPA in Computer Science at KL University</li>
+                <li><strong>2</strong> Spring Boot microservices built for dynamic report generation</li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!-- Impact -->
+      <section class="impact section container">
+        <article class="metric-card reveal" data-delay="0">
+          <p class="metric-value">9.25</p>
+          <h2>CGPA</h2>
+          <p>Bachelor of Engineering in Computer Science at KL University, Vijayawada.</p>
+        </article>
+        <article class="metric-card reveal" data-delay="80">
+          <p class="metric-value">6+</p>
+          <h2>No-code workflows shipped</h2>
+          <p>Built configurable backend workflow solutions for enterprise clients including Croma and Lenskart.</p>
+        </article>
+        <article class="metric-card reveal" data-delay="160">
+          <p class="metric-value">2</p>
+          <h2>Microservices designed</h2>
+          <p>Built Query Builder and Report Builder services for dynamic report generation and data retrieval.</p>
+        </article>
+      </section>
+
+      <!-- Now Building -->
+      <section class="section container now-building" id="now-building">
+        <div class="section-heading reveal" data-delay="0">
+          <p class="eyebrow">Now Building</p>
+          <h2>Current shipping focus and active learning track</h2>
+        </div>
+
+        <div class="now-grid">
+          <article class="now-card now-card-live reveal" data-delay="40">
+            <p class="now-status"><span class="status-dot" aria-hidden="true"></span> Live this week</p>
+            <h3>Migrating callback reporting from MySQL to StarRocks</h3>
+            <p>
+              Contributing to the Dashboard &amp; Analytics platform, improving scalability for analytical workloads on
+              the reporting pipeline.
+            </p>
+            <ul>
+              <li>Migrating callback reporting services to StarRocks</li>
+              <li>Building Query Builder and Report Builder microservices</li>
+              <li>Integrating Kafka for asynchronous event-driven processing</li>
+            </ul>
+          </article>
+
+          <article class="now-card reveal" data-delay="110">
+            <h3>Learning right now</h3>
+            <p>System design for distributed systems and resilient microservices architecture.</p>
+            <div class="now-tags">
+              <span>Saga Pattern</span>
+              <span>Distributed Systems</span>
+              <span>Event-Driven Architecture</span>
+            </div>
+          </article>
+
+          <article class="now-card reveal" data-delay="180">
+            <h3>Next shipping milestone</h3>
+            <p>
+              Delivering configurable no-code workflow automations for enterprise clients while keeping backend
+              business logic clean and maintainable.
+            </p>
+            <p class="now-meta">Updated <span id="now-building-date"></span></p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section class="section container" id="experience">
+        <div class="section-heading reveal" data-delay="0">
+          <p class="eyebrow">Experience Timeline</p>
+          <h2>Recent work and measurable impact</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal" data-delay="0">
+            <p class="timeline-period">Jun 2026 - Present</p>
+            <h3>Software Development Engineer Intern · Kapture CX</h3>
+            <p>
+              Building configurable backend workflows and reporting infrastructure across the Dashboard &amp; Analytics
+              platform, with end-to-end feature ownership from backend to frontend.
+            </p>
+            <ul>
+              <li>Developed 6+ no-code workflow solutions for enterprise clients including Croma and Lenskart, implementing backend business logic to automate configurable workflows.</li>
+              <li>Contributed to the Dashboard &amp; Analytics platform by migrating callback reporting services from MySQL to StarRocks, improving scalability for analytical workloads.</li>
+              <li>Designed and developed two Spring Boot microservices, Query Builder and Report Builder, to streamline dynamic report generation and data retrieval.</li>
+              <li>Integrated Apache Kafka for asynchronous event-driven processing, enabling scalable communication between reporting services.</li>
+              <li>Built and integrated frontend components using React.js, delivering end-to-end features across backend and frontend.</li>
+              <li>Collaborated with cross-functional teams to design, develop, test, and deploy production-ready features following microservices architecture and REST API best practices.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item reveal" data-delay="80">
+            <p class="timeline-period">2023 - 2027</p>
+            <h3>B.Tech. Computer Science · Koneru Lakshmaiah University, Vijayawada</h3>
+            <p>
+              Pursuing a Bachelor of Engineering in Computer Science with a CGPA of 9.25, with a focus on backend
+              engineering, distributed systems, and system design.
+            </p>
+            <ul>
+              <li>Built full-stack projects spanning microservices architecture, event-driven pipelines, and cloud deployment.</li>
+              <li>Applied data structures, algorithms, and system design fundamentals to production-style problem solving.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- Expertise -->
+      <section class="section container" id="expertise">
+        <div class="section-heading reveal" data-delay="0">
+          <p class="eyebrow">What I Do</p>
+          <h2>Hands-on engineering with product focus</h2>
+        </div>
+
+        <div class="expertise-grid">
+          <article class="expertise-card reveal" data-delay="0">
+            <i class="fa fa-code" aria-hidden="true"></i>
+            <h3>Backend and API Engineering</h3>
+            <p>Designing reliable backend systems and microservices with clear contracts and REST API best practices.</p>
+            <ul>
+              <li>Java, Spring Boot, Spring Security, and Hibernate</li>
+              <li>REST API design and dynamic report generation services</li>
+              <li>JWT-based authentication and role-based access control</li>
+            </ul>
+          </article>
+
+          <article class="expertise-card reveal" data-delay="90">
+            <i class="fa fa-cogs" aria-hidden="true"></i>
+            <h3>Microservices and Event-Driven Systems</h3>
+            <p>Building distributed, event-driven services that stay resilient under load.</p>
+            <ul>
+              <li>Spring Cloud, Eureka, Gateway, and OpenFeign</li>
+              <li>Apache Kafka for asynchronous, event-driven processing</li>
+              <li>Saga pattern for distributed transactions</li>
+            </ul>
+          </article>
+
+          <article class="expertise-card reveal" data-delay="180">
+            <i class="fa fa-cloud" aria-hidden="true"></i>
+            <h3>Frontend, Data &amp; DevOps</h3>
+            <p>Shipping full-stack features and deploying them reliably on cloud infrastructure.</p>
+            <ul>
+              <li>React.js for end-to-end feature delivery</li>
+              <li>MySQL, MongoDB, Redis, and StarRocks</li>
+              <li>Docker, AWS EC2, Maven, Git, and Postman</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="stack-strip reveal" data-delay="220">
+          <span>Java</span>
+          <span>JavaScript</span>
+          <span>SQL</span>
+          <span>Spring Boot</span>
+          <span>Spring Security</span>
+          <span>Spring Cloud</span>
+          <span>Hibernate</span>
+          <span>React.js</span>
+          <span>Kafka</span>
+          <span>Eureka</span>
+          <span>MySQL</span>
+          <span>MongoDB</span>
+          <span>Redis</span>
+          <span>StarRocks</span>
+          <span>Docker</span>
+          <span>AWS EC2</span>
+        </div>
+
+        <section class="skill-constellation reveal" data-delay="260" data-reveal-variant="zoom" aria-label="3D tech stack constellation">
+          <div class="constellation-head">
+            <p class="eyebrow">Interactive Lab</p>
+            <h3>3D tech stack constellation with connected production strengths</h3>
+          </div>
+          <div class="constellation-shell">
+            <div
+              id="skill-constellation-canvas"
+              class="constellation-canvas"
+              role="img"
+              aria-label="3D tech stack network graph"
+            ></div>
+            <aside class="constellation-info">
+              <p class="constellation-label">Selected Tech</p>
+              <h4 id="constellation-title">Java</h4>
+              <p id="constellation-description">
+                Primary backend language for building APIs, microservices, and production-ready backend logic.
+              </p>
+              <a id="constellation-link" class="constellation-link" href="#experience">See Java delivery impact</a>
+            </aside>
+          </div>
+        </section>
+      </section>
+
+      <!-- Projects -->
+      <section class="section container" id="projects">
+        <div class="project-group">
+          <h3 class="project-group-title reveal" data-delay="70">Featured Projects</h3>
+          <div class="case-grid featured-grid">
+            <article class="case-card reveal" data-delay="90">
+              <div class="case-copy">
+                <h3>Airline Booking &amp; Reservation Platform</h3>
+                <p class="case-meta"><strong>Role:</strong> Full Stack Developer · <strong>Stack:</strong> Java, Spring Boot, Spring Cloud, React.js, Kafka, Redis, Docker</p>
+                <p class="case-label">Challenge</p>
+                <p>Airline booking systems need secure auth, reliable payments, and consistent state across many independent services.</p>
+                <p class="case-label">Architecture</p>
+                <p>Built a full-stack microservices platform with Spring Boot and React.js, covering flight search, seat availability, fare management, booking workflow, and payment integration.</p>
+                <p class="case-label">Tradeoffs</p>
+                <p>Used Saga-based distributed transactions over two-phase commit to keep booking workflows reliable without blocking service availability.</p>
+                <p class="case-label">Outcome</p>
+                <p>Implemented JWT-based authentication, role-based access control, and Redis-backed token revocation, with Spring Cloud Gateway, Eureka, OpenFeign, and Resilience4j for service discovery, routing, and fault tolerance, all containerized with Docker Compose.</p>
+                <div class="project-actions">
+                  <a class="btn btn-primary btn-small" href="mailto:praneethkothagundhu@gmail.com?subject=Hiring%20Inquiry%20for%20Praneeth%20Gupta"
+                    >Hire Me</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="project-group">
+          <h3 class="project-group-title reveal" data-delay="130">Other Projects</h3>
+          <div class="case-grid hobby-grid">
+            <article class="case-card reveal" data-delay="150">
+              <div class="case-copy">
+                <h3>Cloud File Sharing Platform</h3>
+                <p class="case-meta"><strong>Role:</strong> Full Stack Developer · <strong>Stack:</strong> React.js, Spring Boot, AWS EC2, MongoDB</p>
+                <p class="case-label">Challenge</p>
+                <p>Users need a secure way to upload, retrieve, and manage files with proper access control.</p>
+                <p class="case-label">Architecture</p>
+                <p>Built RESTful backend services with Spring Boot integrated with a responsive React.js frontend, with MongoDB collections designed for efficient file metadata storage.</p>
+                <p class="case-label">Tradeoffs</p>
+                <p>Chose MongoDB for flexible metadata schemas over a rigid relational structure to keep file access management simple to extend.</p>
+                <p class="case-label">Outcome</p>
+                <p>Deployed the application on AWS EC2, ensuring secure, authenticated access and reliable availability.</p>
+                <div class="project-actions">
+                  <a class="btn btn-primary btn-small" href="mailto:praneethkothagundhu@gmail.com?subject=Hiring%20Inquiry%20for%20Praneeth%20Gupta"
+                    >Hire Me</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="proof">
+        <div class="section-heading reveal" data-delay="0">
+          <p class="eyebrow">Social Proof</p>
+          <h2>Certifications, coding profiles, and trusted stack</h2>
+        </div>
+
+        <div class="proof-grid">
+          <article class="proof-card reveal" data-delay="0">
+            <h3>Certifications</h3>
+            <ul>
+              <li>AWS Cloud Practitioner</li>
+              <li>MongoDB Associate Developer (Node.js)</li>
+              <li>Linguaskill Certification</li>
+            </ul>
+          </article>
+
+          <article class="proof-card reveal" data-delay="80">
+            <h3>Trusted Stack</h3>
+            <div class="logo-strip">
+              <span><i class="fa fa-code" aria-hidden="true"></i> Java</span>
+              <span><i class="fa fa-server" aria-hidden="true"></i> Spring Boot</span>
+              <span><i class="fa fa-random" aria-hidden="true"></i> Kafka</span>
+              <span><i class="fa fa-database" aria-hidden="true"></i> MySQL + MongoDB</span>
+              <span><i class="fa fa-bolt" aria-hidden="true"></i> Redis + StarRocks</span>
+              <span><i class="fa fa-cube" aria-hidden="true"></i> Docker</span>
+              <span><i class="fa fa-cloud" aria-hidden="true"></i> AWS EC2</span>
+              <span><i class="fa fa-refresh" aria-hidden="true"></i> Git + Postman</span>
+            </div>
+          </article>
+
+          <article class="proof-card reveal" data-delay="160">
+            <h3>Coding Profiles</h3>
+            <ul>
+              <li>LeetCode</li>
+              <li>Codeforces</li>
+              <li>CodeChef</li>
+              <li>Smart Interviews</li>
+            </ul>
+            <a class="proof-link" href="https://www.linkedin.com/in/kothagundu-udaya-praneeth-gupta-3b8570321" target="_blank" rel="noopener noreferrer"
+              >See profile endorsements</a
+            >
+          </article>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section container contact" id="contact">
+        <div class="contact-card reveal" data-delay="0">
+          <p class="eyebrow">Let's Connect</p>
+          <h2>Open to Software Development Engineer and Full Stack Engineer opportunities</h2>
+          <p>
+            If your team cares about dependable systems and thoughtful execution, I would love to connect.
+          </p>
+
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:praneethkothagundhu@gmail.com?subject=Interview%20Opportunity%20for%20Praneeth%20Gupta"
+              >Hire Me</a
+            >
+            <a class="btn btn-secondary" href="https://www.linkedin.com/in/kothagundu-udaya-praneeth-gupta-3b8570321" target="_blank" rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+            <a class="btn btn-secondary" href="https://github.com/praneeth00007" target="_blank" rel="noopener noreferrer"
+              >GitHub</a
+            >
+          </div>
+
+          <div class="contact-links">
+            <a href="mailto:praneethkothagundhu@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> praneethkothagundhu@gmail.com</a>
+            <a href="tel:+916303589898"><i class="fa fa-phone" aria-hidden="true"></i> +91 6303 589 898</a>
+            <a href="http://praneeth.cyou/" target="_blank" rel="noopener noreferrer"><i class="fa fa-globe" aria-hidden="true"></i> praneeth.cyou</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer container">
+      <p><span id="year"></span> Praneeth Gupta. Built with care and clean code.</p>
+      <a href="#top" class="back-top" aria-label="Back to top">Back to top</a>
+    </footer>
+
+    <div class="command-palette" id="command-palette" hidden>
+      <button class="command-backdrop" type="button" aria-label="Close quick navigation"></button>
+      <section class="command-dialog" role="dialog" aria-modal="true" aria-labelledby="command-title">
+        <div class="command-head">
+          <p id="command-title">Quick Navigation</p>
+          <span class="command-hint">Use / to open, Enter to run</span>
+        </div>
+        <input
+          class="command-input"
+          id="command-search"
+          name="command-search"
+          type="text"
+          placeholder="Jump to section, link, or action..."
+          aria-label="Search commands"
+        />
+        <ul class="command-list" role="listbox" aria-label="Quick actions">
+          <li>
+            <button class="command-item" type="button" data-href="#about" data-keywords="about hero intro profile section">
+              <span class="command-label">About</span>
+              <span class="command-meta">Jump</span>
+            </button>
+          </li>
+          <li>
+            <button class="command-item" type="button" data-href="#now-building" data-keywords="now building current learning shipping">
+              <span class="command-label">Now Building</span>
+              <span class="command-meta">Jump</span>
+            </button>
+          </li>
+          <li>
+            <button class="command-item" type="button" data-href="#experience" data-keywords="experience timeline work">
+              <span class="command-label">Experience</span>
+              <span class="command-meta">Jump</span>
+            </button>
+          </li>
+          <li>
+            <button class="command-item" type="button" data-href="#expertise" data-keywords="skills expertise stack">
+              <span class="command-label">Expertise</span>
+              <span class="command-meta">Jump</span>
+            </button>
+          </li>
+          <li>
+            <button class="command-item" type="button" data-href="#expertise" data-keywords="3d constellation skill graph lab">
+              <span class="command-label">Skill Constellation</span>
+              <span class="command-meta">Open</span>
+            </button>
+          </li>
+          <li>
+            <button class="command-item" type="button" data-href="#projects" data-keywords="projects portfolio work samples">
+              <span class="command-label">Projects</span>
+              <span class="command-meta">Jump</span>
+            </button>
+          </li>
+          <li>
+            <button class="command-item" type="button" data-href="#projects" data-keywords="featured projects hobby projects portfolio work">
+              <span class="command-label">Projects View</span>
+              <span class="command-meta">Open</span>
+            </button>
+          </li>
+          <li>
+            <button class="command-item" type="button" data-href="#contact" data-keywords="contact reach hire">
+              <span class="command-label">Contact</span>
+              <span class="command-meta">Jump</span>
+            </button>
+          </li>
+          <li>
+            <button class="command-item" type="button" data-href="resume/Praneeth_resume.pdf" data-external="true" data-keywords="resume cv pdf">
+              <span class="command-label">Resume</span>
+              <span class="command-meta">Open</span>
+            </button>
+          </li>
+          <li>
+            <button class="command-item" type="button" data-href="mailto:praneethkothagundhu@gmail.com?subject=Hiring%20Inquiry%20for%20Praneeth%20Gupta" data-keywords="hire email opportunity">
+              <span class="command-label">Hire Me</span>
+              <span class="command-meta">Action</span>
+            </button>
+          </li>
+          <li>
+            <button class="command-item" type="button" data-href="https://www.linkedin.com/in/kothagundu-udaya-praneeth-gupta-3b8570321" data-external="true" data-keywords="linkedin social profile">
+              <span class="command-label">LinkedIn</span>
+              <span class="command-meta">Open</span>
+            </button>
+          </li>
+          <li>
+            <button class="command-item" type="button" data-href="https://github.com/praneeth00007" data-external="true" data-keywords="github code repositories">
+              <span class="command-label">GitHub</span>
+              <span class="command-meta">Open</span>
+            </button>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <script src="js/reveal-widget.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/project-card-tilt.js"></script>
+    <script src="js/immersive-ui.js"></script>
+    <script src="js/hero-particle-drift.js"></script>
+    <script src="js/brand-namemark.js"></script>
+  </body>
+</html>
